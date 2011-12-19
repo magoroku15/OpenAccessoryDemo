@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="62">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="Common" displayName="Common" projectFiles="true">
+        <itemPath>../../../../Microchip/Include/Compiler.h</itemPath>
+        <itemPath>../../../../Microchip/Include/GenericTypeDefs.h</itemPath>
+        <itemPath>../../../../Microchip/Include/struct_queue.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="Hardware Profiles"
+                     displayName="Hardware Profiles"
+                     projectFiles="true">
+        <itemPath>../HardwareProfile - PIC24F ADK for Android.h</itemPath>
+        <itemPath>../HardwareProfile - PIC24F Starter Kit.h</itemPath>
+        <itemPath>../HardwareProfile - PIC24FJ256GB110 PIM.h</itemPath>
+        <itemPath>../HardwareProfile - PIC24FJ256GB210 PIM.h</itemPath>
+        <itemPath>../HardwareProfile - PIC24FJ64GB004 PIM.h</itemPath>
+        <itemPath>../HardwareProfile - PIC32 USB Starter Kit.h</itemPath>
+        <itemPath>../HardwareProfile - PIC32MX460F512L PIM.h</itemPath>
+        <itemPath>../HardwareProfile - PIC32MX795F512L PIM.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="USB Stack" displayName="USB Stack" projectFiles="true">
+        <itemPath>../../../../Microchip/Include/USB/usb.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_ch9.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_common.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_hal.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_hal_pic24.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_hal_pic32.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_host.h</itemPath>
+        <itemPath>../../../../Microchip/Include/USB/usb_host_android.h</itemPath>
+      </logicalFolder>
+      <itemPath>../HardwareProfile.h</itemPath>
+      <itemPath>../usb_config.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="LibraryFiles"
+                   displayName="Library Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ObjectFiles"
+                   displayName="Object Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../main.c</itemPath>
+      <itemPath>../usb_config.c</itemPath>
+      <itemPath>../../../../Microchip/USB/usb_host.c</itemPath>
+      <itemPath>../../../../Microchip/USB/Android Host Driver/usb_host_android.c</itemPath>
+      <itemPath>../../../../Microchip/USB/Android Host Driver/usb_host_android_protocol_v1.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="ADK_PIC24F_Accesory_Development_Starter_Kit_for_Android" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB110</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>PICkit3PlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="optimization-level" value="s"/>
+        <property key="preprocessor-macros" value="PIC24F_ADK_FOR_ANDROID"/>
+        <property key="code-model" value="default"/>
+        <property key="const-model" value="default"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="data-model" value="default"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-all-warnings" value="true"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="scalar-model" value="default"/>
+      </C30>
+      <C30-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=".."/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="relax" value="false"/>
+        <property key="warning-level" value="emit-warnings"/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value="&quot;$(BINDIR_)$(TARGETBASE).map&quot;"/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="true"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories"
+                  value="../../../../../Program Files/Microchip/MPLAB C30/lib"/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <PICkit3PlatformTool>
+      </PICkit3PlatformTool>
+    </conf>
+    <conf name="PIC24FJ256GB110_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB110</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="default"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC24FJ64GB004_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB110</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="default"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC24FJ256GB210_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB210</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="default"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC24F_Starter_Kit" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24FJ256GB106</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="scalar-model" value="default"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="data-model" value="default"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="optimization-level" value="0"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="const-model" value="default"/>
+        <property key="code-model" value="default"/>
+      </C30>
+      <C30-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="relax" value="false"/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="warning-level" value="emit-warnings"/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+        <property key="fast-math" value="false"/>
+        <property key="legacy-libc" value="false"/>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC24EP512GU810_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC24EP512GU810</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3.24</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="optimization-level" value="0"/>
+        <property key="preprocessor-macros" value="PIC24EP512GU810_PIM"/>
+        <property key="code-model" value="default"/>
+        <property key="const-model" value="default"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="data-model" value="default"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="scalar-model" value="default"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="dsPIC33EP512MU810_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>dsPIC33EP512MU810</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3_30b</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="optimization-level" value="0"/>
+        <property key="preprocessor-macros" value="DSPIC33EP512MU810_PIM"/>
+        <property key="code-model" value="default"/>
+        <property key="const-model" value="default"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="data-model" value="default"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="scalar-model" value="default"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="dsPIC33E_USB_Starter_Kit" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>dsPIC33EP512MU810</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>RealICEPlatformTool</platformTool>
+        <languageToolchain>C30</languageToolchain>
+        <languageToolchainVersion>3_30b</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C30>
+        <property key="optimization-level" value="0"/>
+        <property key="preprocessor-macros" value="DSPIC33E_USB_STARTER_KIT"/>
+        <property key="code-model" value="default"/>
+        <property key="const-model" value="default"/>
+        <property key="enable-procedural-abstraction" value="false"/>
+        <property key="enable-ansi-warnings" value="false"/>
+        <property key="enable-short-double" value="false"/>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="data-model" value="default"/>
+        <property key="isolate-each-function" value="false"/>
+        <property key="enable-fatal-warnings" value="false"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-ansi-std" value="false"/>
+        <property key="enable-all-warnings" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="scalar-model" value="default"/>
+      </C30>
+      <C30-AS>
+      </C30-AS>
+      <C30-LD>
+        <property key="preprocessor-macros" value=""/>
+        <property key="general-code-protect" value="no_code_protect"/>
+        <property key="secure-write-protect" value="no_write_protect"/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="enable-pack-data" value="true"/>
+        <property key="boot-eeprom" value="no_eeprom"/>
+        <property key="general-write-protect" value="no_write_protect"/>
+        <property key="enable-handles" value="true"/>
+        <property key="enable-data-init" value="true"/>
+        <property key="secure-flash" value="no_flash"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="report-memory-usage" value="false"/>
+        <property key="boot-write-protect" value="no_write_protect"/>
+        <property key="boot-flash" value="no_flash"/>
+        <property key="input-libraries" value=""/>
+        <property key="secure-ram" value="no_ram"/>
+        <property key="enable-check-sections" value="true"/>
+        <property key="enable-default-isr" value="true"/>
+        <property key="symbol-stripping" value="keep-all"/>
+        <property key="boot-ram" value="no_ram"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="secure-eeprom" value="no_eeprom"/>
+      </C30-LD>
+      <C30Global>
+      </C30Global>
+      <RealICEPlatformTool>
+      </RealICEPlatformTool>
+    </conf>
+    <conf name="PIC32_USB_Starter_Board" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX460F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.12</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="additional-warnings" value="false"/>
+        <property key="preprocessor-macros" value="PIC32_USB_STARTER_KIT"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="warning-level" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="PIC32_USB_Starter_Board_II" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.12</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="additional-warnings" value="false"/>
+        <property key="preprocessor-macros" value="PIC32_USB_STARTER_KIT"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="warning-level" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="PIC32_Ethernet_Starter_Board_II" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.12</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="additional-warnings" value="false"/>
+        <property key="preprocessor-macros" value="PIC32_ETHERNET_STARTER_KIT"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="warning-level" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="PIC32MX795F512L_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX795F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.12</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="additional-warnings" value="false"/>
+        <property key="preprocessor-macros" value="PIC32MX795F512L_PIM"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="warning-level" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+    <conf name="PIC32MX460F512L_PIM" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>PIC32MX460F512L</targetDevice>
+        <targetHeader></targetHeader>
+        <platformTool>ICD3PlatformTool</platformTool>
+        <languageToolchain>C32</languageToolchain>
+        <languageToolchainVersion>1.12</languageToolchainVersion>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <C32>
+        <property key="extra-include-directories"
+                  value="..;../../../../Microchip/Include"/>
+        <property key="additional-warnings" value="false"/>
+        <property key="preprocessor-macros" value="PIC32MX460F512L_PIM"/>
+        <property key="exclude-floating-point" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="pre-instruction-scheduling" value="default"/>
+        <property key="use-indirect-calls" value="false"/>
+        <property key="strict-ansi" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="place-data-into-section" value="false"/>
+        <property key="post-instruction-scheduling" value="default"/>
+        <property key="enable-omit-frame-pointer" value="false"/>
+        <property key="enable-unroll-loops" value="false"/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="isolate-each-function" value="false"/>
+      </C32>
+      <C32-AS>
+        <property key="omit-debug-dirs" value="false"/>
+        <property key="extra-include-directories-for-assembler" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="list-file" value=""/>
+        <property key="list-source" value="false"/>
+        <property key="list-assembly" value="false"/>
+        <property key="warning-level" value=""/>
+        <property key="extra-include-directories-for-preprocessor" value=""/>
+        <property key="list-section-info" value="false"/>
+        <property key="omit-forms" value="false"/>
+        <property key="list-symbols" value="false"/>
+        <property key="keep-locals" value="false"/>
+        <property key="false-conditionals" value="false"/>
+        <property key="expand-macros" value="false"/>
+        <property key="assembler-symbols" value=""/>
+      </C32-AS>
+      <C32-LD>
+        <property key="exclude-floating-point-library" value="false"/>
+        <property key="optimization-level" value=""/>
+        <property key="generate-16-bit-code" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="warn-section-align" value="false"/>
+        <property key="heap-size" value="3000"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="remove-unused-sections" value="false"/>
+        <property key="stack-size" value=""/>
+        <property key="linker-symbols" value=""/>
+        <property key="trace-symbols" value=""/>
+        <property key="map-file" value=""/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="generate-cross-reference-file" value="false"/>
+        <property key="input-libraries" value=""/>
+        <property key="enable-check-sections" value="false"/>
+        <property key="symbol-stripping" value=""/>
+        <property key="extra-lib-directories" value=""/>
+      </C32-LD>
+      <C32Global>
+      </C32Global>
+      <ICD3PlatformTool>
+      </ICD3PlatformTool>
+    </conf>
+  </confs>
+</configurationDescriptor>
