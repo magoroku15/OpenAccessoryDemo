@@ -58,6 +58,11 @@ Change History
     #if defined(__PIC24FJ256GB110__)
         _CONFIG2(FNOSC_PRIPLL & POSCMOD_HS & PLL_96MHZ_ON & PLLDIV_DIV2) // Primary HS OSC with PLL, USBPLL /2
         _CONFIG1(JTAGEN_OFF & FWDTEN_OFF & ICS_PGx2)   // JTAG off, watchdog timer off
+    #elif defined(__PIC24FJ64GB002__)	//futaba
+	_CONFIG1(WDTPS_PS1 & FWPSA_PR32 & WINDIS_OFF & FWDTEN_OFF & ICS_PGx1 & GWRP_OFF & GCP_OFF & JTAGEN_OFF)
+	_CONFIG2(POSCMOD_NONE & I2C1SEL_PRI & IOL1WAY_OFF & OSCIOFNC_ON & FCKSM_CSDCMD & FNOSC_FRCPLL & PLL96MHZ_ON & PLLDIV_DIV2 & IESO_OFF)
+	_CONFIG3(WPFP_WPFP0 & SOSCSEL_IO & WUTSEL_LEG & WPDIS_WPDIS & WPCFG_WPCFGDIS & WPEND_WPENDMEM)
+	_CONFIG4(DSWDTPS_DSWDTPS3 & DSWDTOSC_LPRC & RTCOSC_SOSC & DSBOREN_OFF & DSWDTEN_OFF)
     #elif defined(__PIC24FJ64GB004__)
         _CONFIG1(WDTPS_PS1 & FWPSA_PR32 & WINDIS_OFF & FWDTEN_OFF & ICS_PGx1 & GWRP_OFF & GCP_OFF & JTAGEN_OFF)
         _CONFIG2(POSCMOD_HS & I2C1SEL_PRI & IOL1WAY_OFF & OSCIOFNC_ON & FCKSM_CSDCMD & FNOSC_PRIPLL & PLL96MHZ_ON & PLLDIV_DIV2 & IESO_ON)
@@ -282,6 +287,25 @@ int main(void)
     TRISBbits.TRISB5 = 0;
     LATBbits.LATB5 = 1;
 
+    #endif
+
+    // futaba
+    #if defined(__PIC24FJ64GB002__)
+	//On the PIC24FJ64GB004 Family of USB microcontrollers, the PLL will not power up and be enabled
+	//by default, even if a PLL enabled oscillator configuration is selected (such as HS+PLL).
+	//This allows the device to power up at a lower initial operating frequency, which can be
+	//advantageous when powered from a source which is not gauranteed to be adequate for 32MHz
+	//operation.  On these devices, user firmware needs to manually set the CLKDIV<PLLEN> bit to
+	//power up the PLL.
+	{
+		unsigned int pll_startup_counter = 600;
+		CLKDIVbits.PLLEN = 1;
+		while(pll_startup_counter--);
+	}
+
+	AD1PCFG = 0xffff;
+	CLKDIV = 0x0000;	// Set PLL prescaler (1:1)
+		
     #endif
 
     USBInitialize(0);
@@ -804,6 +828,20 @@ static BYTE ReadPOT(void)
             temp = temp * 100;
             temp = temp/1023;
         
+	#elif defined(PIC24FJ64GB002_PIM)	//futaba
+	    AD1CHS = 0x5;			//MUXA uses AN5
+
+	    // Get an ADC sample
+	    AD1CON1bits.SAMP = 1;		//Start sampling
+	    for(w.Val=0;w.Val<1000;w.Val++); //Sample delay, conversion start automatically
+		AD1CON1bits.SAMP = 0;		//Start sampling
+		for(w.Val=0;w.Val<1000;w.Val++); //Sample delay, conversion start automatically
+		while(!AD1CON1bits.DONE);	//Wait for conversion to complete
+
+		temp = (DWORD)ADC1BUF0;
+		temp = temp * 100;
+		temp = temp/1023;
+
         #elif defined(PIC24FJ64GB004_PIM)
             AD1CHS = 0x7;           //MUXA uses AN7
 
