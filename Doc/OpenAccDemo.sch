@@ -10783,9 +10783,9 @@ Source: www.kingbright.com</description>
 <wire x1="134.366" y1="-52.324" x2="199.39" y2="-52.324" width="0.1524" layer="97"/>
 <wire x1="134.112" y1="-57.658" x2="199.39" y2="-57.658" width="0.1524" layer="97"/>
 <wire x1="134.112" y1="-63.246" x2="199.39" y2="-63.246" width="0.1524" layer="97"/>
-<text x="152.4" y="-50.8" size="2.54" layer="97">PICnome64 v1.1</text>
-<text x="139.7" y="-55.88" size="2.54" layer="97">Designed by Shunichi Yamamoto</text>
-<text x="157.48" y="-62.23" size="2.54" layer="97">05/28/2010</text>
+<text x="152.4" y="-50.8" size="2.54" layer="97">OpenAccDemo V1.0</text>
+<text x="139.7" y="-55.88" size="2.54" layer="97">Designed by magoroku15</text>
+<text x="157.48" y="-62.23" size="2.54" layer="97">01/08/2011</text>
 <text x="134.62" y="-66.04" size="1.4224" layer="97">Released under Creative Commons Attribution-Share Alike 3.0 Unported</text>
 <frame x1="-66.04" y1="-71.12" x2="203.2" y2="127" columns="8" rows="5" layer="91"/>
 </plain>
