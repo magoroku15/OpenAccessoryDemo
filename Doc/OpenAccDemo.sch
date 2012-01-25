@@ -10765,13 +10765,13 @@ Source: www.kingbright.com</description>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device="" value="VDD"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="0204/5" value="10k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="0204/5" value="10k"/>
 <part name="S1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="S2" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="P+4" library="supply1" deviceset="VCC" device="" value="VDD"/>
 </parts>
 <sheets>
 <sheet>
@@ -10807,13 +10807,13 @@ Source: www.kingbright.com</description>
 <instance part="JP2" gate="G$1" x="165.1" y="10.16"/>
 <instance part="GND2" gate="1" x="149.86" y="73.66"/>
 <instance part="P+1" gate="VCC" x="149.86" y="106.68"/>
-<instance part="P+2" gate="VCC" x="99.06" y="60.96"/>
 <instance part="R2" gate="G$1" x="25.4" y="45.72" rot="R90"/>
 <instance part="R3" gate="G$1" x="12.7" y="45.72" rot="R90"/>
 <instance part="S1" gate="1" x="-10.16" y="0" rot="R270"/>
 <instance part="S2" gate="1" x="-10.16" y="-17.78" rot="R270"/>
 <instance part="P+3" gate="VCC" x="116.84" y="60.96"/>
 <instance part="GND4" gate="1" x="86.36" y="76.2"/>
+<instance part="P+4" gate="VCC" x="104.14" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -10903,15 +10903,21 @@ Source: www.kingbright.com</description>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDD@2"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="99.06" y1="27.94" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="VBUS"/>
 <wire x1="99.06" y1="-5.08" x2="116.84" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-5.08" x2="116.84" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="104.14" y1="58.42" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VUSB"/>
+<wire x1="99.06" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="15.24" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="VDD@2"/>
+<wire x1="104.14" y1="27.94" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
+<junction x="104.14" y="27.94"/>
 </segment>
 </net>
 <net name="VDD" class="0">
